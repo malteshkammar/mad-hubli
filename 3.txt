@@ -1,0 +1,313 @@
+activity xml code
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pswd_signup"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="466dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_signup"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="518dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:text="Password :"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:text="User Name :"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:text="SIGNUP ACTIVITY"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="342dp"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+login xml code
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/pswd_login"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="466dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="518dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:text="Password :"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:text="User Name :"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:text="LOGIN ACTIVITY"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="342dp"
+        android:text="SIGN IN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+login.java
+
+
+package com.example.signup;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class login extends AppCompatActivity implements View.OnClickListener {
+    EditText lu,lp;
+    Button lb;
+    String suser,spswd;
+    int count=0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        lu=(EditText) findViewById(R.id.user_login);
+        lp=(EditText) findViewById(R.id.pswd_login);
+        lb=(Button) findViewById(R.id.button_login);
+        lb.setOnClickListener(this);
+        Bundle bundle=getIntent().getBundleExtra("data");
+        suser=bundle.getString("key");
+        spswd=bundle.getString("pwd");
+    }
+    @Override
+    public void onClick(View v) {
+        String loin_un=lu.getText().toString();
+        String login_pwd=lp.getText().toString();
+        boolean equals = spswd.equals(login_pwd);
+        if ((suser.equals(loin_un)) && (spswd.equals(login_pwd))) {
+            Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            count++;
+            if(count==3){
+                lb.setEnabled(false);
+                Toast.makeText(getBaseContext(), "Failed Login Attempts", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+}
+
+
+
+activity.java
+
+package com.example.signup;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    EditText su,sp;
+    Button sb;
+    String re="(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!])[A-Za-z\\d@$!]{8,}";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        su=(EditText) findViewById(R.id.user_signup);
+        sp=(EditText) findViewById(R.id.pswd_login);
+        sb=(Button) findViewById(R.id.button_signup);
+        sb.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        String signup_un=su.getText().toString();
+        String signup_pswd=sp.getText().toString();
+        if(validatePassword(signup_pswd)){
+            Bundle bundle =new Bundle();
+            bundle.putString("user",signup_un);
+            bundle.putString("pwd",signup_pswd);
+            Intent it=new Intent(this,login.class);
+            it.putExtra("data",bundle);
+            startActivity(it);
+
+        }
+        else {
+            Toast.makeText(getBaseContext(), "Invalid Password", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean validatePassword(String signup_pswd) {
+        Pattern pattern =Pattern.compile(re);
+        Matcher matcher = pattern.matcher(signup_pswd);
+        return matcher.matches();
+    }
+}

@@ -1,0 +1,189 @@
+Java
+
+package com.example.exp2;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity {
+    EditText e1, e2;
+    TextView tv1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        e1=(EditText) findViewById(R.id.edittext1);
+        e2=(EditText) findViewById(R.id.edittext2);
+        tv1=(TextView) findViewById(R.id.textView7);
+    }
+    public void doadd(View v){
+        int a1= Integer.parseInt(e1.getText().toString());
+        int a2= Integer.parseInt(e2.getText().toString());
+        int result=a1+a2;
+        tv1.setText(""+result);
+    }
+
+    public void dosub(View v){
+        int a1= Integer.parseInt(e1.getText().toString());
+        int a2= Integer.parseInt(e2.getText().toString());
+        int result=a1-a2;
+        tv1.setText(""+result);
+    }
+
+    public void domulti(View v){
+        int a1= Integer.parseInt(e1.getText().toString());
+        int a2= Integer.parseInt(e2.getText().toString());
+        int result=a1*a2;
+        tv1.setText(""+result);
+    }
+
+    public void dodivi(View v){
+        int a1= Integer.parseInt(e1.getText().toString());
+        int a2= Integer.parseInt(e2.getText().toString());
+        int result=a1/a2;
+        tv1.setText(""+result);
+    }
+}
+
+
+
+XML Code
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="658dp"
+        android:text="SIMPLE CALCULATOR"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="209dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="96dp"
+        android:background="#FBFBF8"
+        android:ems="10"
+        android:hint="  Enter number 1"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="214dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="144dp"
+        android:background="#FBFBFB"
+        android:ems="10"
+        android:hint="  Enter number 2"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="391dp"
+        android:onClick="doadd"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="391dp"
+        android:onClick="dosub"
+        android:text="sub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="164dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="322dp"
+        android:onClick="domulti"
+        android:text="multiplication"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="324dp"
+        android:onClick="dodivi"
+        android:text="division"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="115dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="480dp"
+        android:background="#F1F3F1"
+        android:hint="Result"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#5E35B1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
